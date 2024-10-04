@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Group Chat</title>
+    <script src="./js/bootstrapLinks.js"></script>
+    <link rel="stylesheet" href="css/chatlist.css" />
+
+    <script src="js/localStorage.js"></script>
+  </head>
+
+  <body>
+    <div id="navbar"></div>
+    <script src="./js/navbar.js"></script>
+    <!-- Chat Window -->
+    <div id="chat-container">
+      <div id="chat-header">
+        <p>Group Chat</p>
+        <button class="button" id="close-btn" onclick="closeChat()">X</button>
+      </div>
+
+      <div id="chat-box">
+        <!-- Messages will be appended here dynamically -->
+      </div>
+
+      <!-- Message Input Section -->
+      <div id="message-input-section">
+        <span id="loggedin-user">User</span>
+        <input
+          type="text"
+          id="message-input"
+          placeholder="Enter your message"
+        />
+        <button class="button" id="send-btn" onclick="sendMessage()">
+          Send
+        </button>
+        <button class="button" id="refresh-btn" onclick="refreshPage()">
+          Refresh
+        </button>
+      </div>
+    </div>
+
+    <script src="js/chatlist.js"></script>
+  </body>
+</html>

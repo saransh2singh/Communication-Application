@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <script src="./js/bootstrapLinks.js"></script>
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/login.js"></script>
+  </head>
+
+  <body>
+    <form action="" method="get" onsubmit="return validate()" novalidate>
+      <div class="login">
+        <h1 class="login-h1">Login</h1>
+        <div>
+          <label for="email" class="email-label">Email</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="anne.hunter@mail.com"
+            id="email"
+            class="email"
+          />
+        </div>
+        <div>
+          <label for="password" class="password-label">Password</label>
+          <input
+            type="password"
+            placeholder="*********"
+            name="password"
+            id="password"
+            class="password"
+          />
+        </div>
+        <button class="login-btn">Login</button>
+      </div>
+    </form>
+  </body>
+</html>

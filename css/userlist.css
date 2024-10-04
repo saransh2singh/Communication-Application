@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.h2-users {
+    margin-bottom: 1em;
+}
+
+.center {
+    text-align: center;
+}
+
+.disabled-link {
+    color: grey;
+    cursor: not-allowed;
+    text-decoration: none;
+}
+
+.disabled-link:hover {
+    text-decoration: none;
+}
+
+.nav-btns {
+    padding: 1em 3em;
+    width: 100%;
+    border-left: none;
+    background-color: lightgray;
+}
+
+.nav-btns:hover {
+    background-color: gray;
+}
+
+ul {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.btn-1 {
+    border-left: 2px solid black;
+}
+
+.active-btn {
+    background-color: white;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+li {
+    width: 100%;
+}

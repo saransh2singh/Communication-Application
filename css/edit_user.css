@@ -1,0 +1,98 @@
+.edit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .save-button {
+    margin: auto;
+    margin-top: 20px;
+    background-color: aqua;
+    border: 2px solid black;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 13px;
+    width: 130px;
+    height: 40px;
+    align-self: center;
+  }
+
+  .save-button:hover {
+    color: white;
+    background-color: black;
+  }
+
+  .fullName,
+  .email {
+    width: 18em;
+    height: 3em;
+    margin-bottom: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  .fullName-label,
+  .email-label {
+    font-weight: bold;
+    font-size: 1em;
+    margin-right: 1.9em;
+  }
+  .email-label {
+    margin-right: 4em;
+  }
+  .active-btn {
+    background-color: white;
+  }
+
+  .nav-btns {
+    padding: 1em 3em;
+    width: 100%;
+    border-left: none;
+    background-color: lightgray;
+  }
+
+  .nav-btns:hover {
+    background-color: gray;
+  }
+
+  ul {
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .btn-1 {
+    border-left: 2px solid black;
+  }
+
+  .active-btn,.manage-nav {
+    background-color: white;
+    border-radius: 6px;
+  }
+
+  .color-change:hover {
+    color: gray;
+  }
+
+  li {
+    width: 100%;
+  }
+
+  .flex {
+    display: flex;
+    list-style-type: none;
+  }
+  .manage-users {
+    background-color: white;
+    border-radius: 6px;
+  }
+  .edit-h1 {
+    font-size: 2em;
+    padding-bottom: 2em;
+    padding-top: 1em;
+  }

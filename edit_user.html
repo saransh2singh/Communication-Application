@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit User Page</title>
+    <script src="./js/bootstrapLinks.js"></script>
+    <link rel="stylesheet" href="css/edit_user.css" />
+    <script src="js/edit_user.js"></script>
+  </head>
+
+  <body>
+    <div id="navbar"></div>
+    <script src="./js/navbar.js"></script>
+    <div class="edit">
+      <h1 class="edit-h1">Edit User Information</h1>
+      <form id="editUserForm">
+        <div>
+          <label for="fullName" class="fullName-label">Full Name</label>
+          <input
+            type="text"
+            name="fullName"
+            class="fullName"
+            id="fullName"
+            placeholder="Anne Hunter"
+          />
+        </div>
+
+        <div>
+          <label for="email" class="email-label">Email</label>
+          <input
+            type="email"
+            name="email"
+            class="email"
+            id="email"
+            placeholder="anne.hunter@mail.com"
+          />
+        </div>
+
+        <button type="submit" class="save-button">Save</button>
+      </form>
+    </div>
+  </body>
+</html>

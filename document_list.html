@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upload Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    
+  <link rel="stylesheet" href="css/document_list.css" />
+  <script src="js/localStorage.js"></script>
+</head>
+
+<body>
+  <div id="navbar"></div>
+  <script src="./js/navbar.js"></script>
+  <div class="container mt-5">
+    <h2 class="h2-users">My Uploads</h2>
+    <table class="table table-striped table-bordered table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Label</th>
+          <th scope="col">File Name</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody id="uploadTableBody">
+        <!-- Uploads will be populated here -->
+      </tbody>
+    </table>
+
+    <!-- Button trigger modal for adding uploads -->
+    <button type="button" class="btn btn-addUpload" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      + Add Upload
+    </button>
+
+    <!-- Modal for adding uploads -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Upload</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <label for="description" class="description">File Description</label>
+              <input type="text" class="description-text" name="description" id="description" />
+            </div>
+            <div>
+              <label for="filename" class="filename">File Upload</label>
+              <input type="file" name="filename" class="filename-input" id="filename" />
+            </div>
+          </div>
+          <div class="modal-footer upload-footer">
+            <button type="button" class="btn btn-secondary uploadnow-btn" id="uploadNowBtn">
+              Upload Now
+            </button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for editing uploads -->
+    <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="editModalLabel">Edit</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <label for="editDescription" class="description">File Description</label>
+              <input type="text" name="editDescription" id="editDescription" class="description-text" />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary saveEditBtn" id="saveEditBtn">
+              Save
+            </button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for deleting uploads -->
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="deleteModalLabel">
+              Confirm From Webpage
+            </h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body delete-body">Are you sure?</div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary delete-ok" id="confirmDeleteBtn">
+              ok
+            </button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/document_list.js"></script>
+</body>
+
+</html>

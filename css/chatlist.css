@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #f4f4f4;
+  }
+
+  .flex {
+    display: flex;
+    list-style-type: none;
+  }
+
+  #chat-container {
+    width: 100%;
+    margin: 20px auto;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+
+  #chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: white;
+    position: relative;
+  }
+
+  #chat-header p {
+    margin: 0;
+    font-size: 16px;
+    text-align: center;
+    flex-grow: 1;
+  }
+
+  #close-btn {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: auto;
+  }
+
+  #close-btn:hover {
+    background-color: #f0f0f0;
+  }
+
+  #chat-box {
+    height: 300px;
+    padding: 15px;
+    overflow-y: auto;
+    border: 3px solid black;
+    border-radius: 10px;
+  }
+
+  #chat-box p {
+    margin-bottom: 10px;
+  }
+
+  #message-input-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+  }
+
+  #loggedin-user {
+    font-weight: bold;
+    margin-right: 13px;
+    margin-left: 13px;
+    margin-top: 10px;
+  }
+
+  #message-input {
+    flex-grow: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 3px solid black;
+    border-radius: 10px;
+  }
+
+  .button {
+    padding: 10px 20px;
+    border: 2px solid #000;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .button:hover {
+    background-color: rgb(199, 197, 197);
+  }
+
+  #send-btn {
+    margin-right: 10px;
+  }
+
+  #chat-box {
+    overflow-y: auto;
+  }
+
+  #chat-box::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  #chat-box::-webkit-scrollbar-thumb {
+    background: #999;
+    border-radius: 5px;
+  }
+  .active-btn {
+    background-color: white;
+  }
+
+  .nav-btns {
+    padding: 1em 3em;
+    width: 100%;
+    border-left: none;
+    background-color: lightgray;
+  }
+
+  .nav-btns:hover {
+    background-color: gray;
+  }
+
+  ul {
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .btn-1 {
+    border-left: 2px solid black;
+  }
+
+  .active-btn {
+    background-color: white;
+    border-radius: 6px;
+  }
+
+  .color-change:hover {
+    color: gray;
+  }
+
+  li {
+    width: 100%;
+  }
